@@ -1,0 +1,46 @@
+@charset "UTF-8";
+html {
+  font-family: "ヒラギノ明朝 Pro W6","Hiragino Mincho Pro","HGS明朝E","ＭＳ Ｐ明朝",serif;
+  line-height: 120%;
+  height: 100%;
+}
+
+.img_left {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+
+#content {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.space {
+  height: 40px;
+}
+
+.statement {
+  word-wrap: normal;
+  min-height: 650px;
+}
+
+.ura {
+  position: relative;
+  min-height: 628px;
+}
+
+.migi_ni_photo {
+  float: left;
+  width: 450px;
+}
+
+.info {
+  position: absolute;
+  bottom: 10px;
+  left: 450px;
+}
+
+.info_content {
+  margin-left: 15px;
+  font-size: 90%;
+}
