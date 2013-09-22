@@ -3,6 +3,25 @@ html {
   font-family: "ヒラギノ明朝 Pro W6","Hiragino Mincho Pro","HGS明朝E","ＭＳ Ｐ明朝",serif;
   line-height: 120%;
   height: 100%;
+  background-color: #cc0000;
+}
+
+h1 {
+  font-size: 600%;
+  line-height: 150px;
+  height: 300px;
+}
+
+h2 {
+  font-size: 500%;
+  line-height: 56px;
+  color: #fafafa;
+  margin-bottom: 0px;
+}
+
+h3 {
+  color: black;
+  font-size: 200%;
 }
 
 .img_left {
@@ -21,10 +40,9 @@ html {
 
 .statement {
   word-wrap: normal;
-  min-height: 650px;
 }
 
-.ura {
+.post_card {
   position: relative;
   min-height: 628px;
 }
@@ -34,10 +52,22 @@ html {
   width: 450px;
 }
 
-.info {
+.migi {
   position: absolute;
-  bottom: 10px;
+  width: 450px;
   left: 450px;
+  min-height: 628px;
+}
+
+.migi_no1 {
+  position: absolute;
+  bottom: 0px;
+  font-size: 90%;
+}
+
+.migi_no2 {
+  position: absolute;
+  bottom: 0px;
 }
 
 .info_content {
@@ -55,6 +85,6 @@ html {
   top: 0px;
   left: 0px;
   position: fixed;
-  background: white;
+  background: #cc0000;
   text-align: center;
 }

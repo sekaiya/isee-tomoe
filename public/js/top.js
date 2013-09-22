@@ -1,14 +1,17 @@
+var top_a = 5;
+if($(window).height() > 630) { top_a =($(window).height()-630)/2 }
 $(window).load(
 	function() {
 		var dfd = $.Deferred();
 		dfd.then(
 			function(){
 				$("#loadingWrap").remove();
-				return $("#content").hide();
+				$("#content").hide();
+				return $("#top").css('margin-top',top_a + 'px')
 			}
 		).then(
 			function(){
-				return $("#top").show();
+				return $("#top").fadeIn(2000);
 			}
 		).then(
 			function(){

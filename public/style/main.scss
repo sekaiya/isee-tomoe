@@ -3,10 +3,27 @@
 		#{$prefix}#{$property}: $value;
 	}
 }
+$background: #cc0000;
 html {
   font-family: "ヒラギノ明朝 Pro W6","Hiragino Mincho Pro","HGS明朝E","ＭＳ Ｐ明朝",serif;
   line-height: 120%;
 	height:100%;
+	background-color:$background;
+}
+h1 {
+	font-size: 600%;
+	line-height: 150px;
+	height:300px;
+}
+h2{
+	font-size: 500%;
+	line-height: 56px;
+	color: rgb(250, 250, 250);
+	 margin-bottom:0px; 
+}
+h3{
+	color:black;
+	font-size: 200%;
 }
 .img_left{
 	float: right;
@@ -21,10 +38,9 @@ html {
 }
 .statement {
 	word-wrap: normal; 
-	min-height:650px;
 }
 
-.ura {
+.post_card {
 	position:relative;
 	min-height:628px;
 }
@@ -32,17 +48,27 @@ html {
 	float: left;
 	width: 450px;
 }
-.info {
+.migi {
 	position:absolute;
-	bottom: 10px;
+	width:450px;
 	left: 450px;
+	min-height:628px;
+}
+.migi_no1 {
+	position: absolute;
+	bottom:0px;
+	font-size: 90%;
+}
+.migi_no2 {
+	position: absolute;
+	bottom:0px;
 }
 .info_content {
 	margin-left:15px;
 	font-size: 90%;
 }
 #top{
-	text-align: center;
+	text-align: center ;
 }
 #loadingWrap{
 	width: 100%;
@@ -50,6 +76,6 @@ html {
 	top: 0px;
 	left: 0px;
 	position: fixed;
-	background: white;
+	background: $background;
 	text-align: center;
 }
