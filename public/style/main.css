@@ -29,7 +29,7 @@ html {
   min-height: 628px;
 }
 
-.migi_ni_photo {
+.hidari_photo {
   float: left;
   width: 450px;
 }
@@ -43,4 +43,18 @@ html {
 .info_content {
   margin-left: 15px;
   font-size: 90%;
+}
+
+#top {
+  text-align: center;
+}
+
+#loadingWrap {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  background: white;
+  text-align: center;
 }
