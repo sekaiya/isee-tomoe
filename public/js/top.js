@@ -1,5 +1,7 @@
-var top_a = 5;
-if($(window).height() > 630) { top_a =($(window).height()-630)/2 }
+var top_a;var zoom
+zoom = $(window).height()/629
+if($(window).width()/425 < zoom){zoom = $(window).width()/425}
+top_a =($(window).height()-zoom*600)/2
 $(window).load(
 	function() {
 		var dfd = $.Deferred();
@@ -7,6 +9,7 @@ $(window).load(
 			function(){
 				$("#loadingWrap").remove();
 				$("#content").hide();
+				$("#anime").css('height',zoom*600 + 'px');
 				return $("#top").css('margin-top',top_a + 'px')
 			}
 		).then(
